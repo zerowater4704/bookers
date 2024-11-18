@@ -12,7 +12,10 @@
 
   <body>
     <main>
-    <%= yield %>
+      <div class="successfully-text">
+        <p><%= flash[:notice] %></p>
+      </div>
+      <%= yield %> 
     </main>
   </body>
 </html>
